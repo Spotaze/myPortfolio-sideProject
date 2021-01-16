@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+          integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+          crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar">
+    <div class="navbar_container">
+        <a href="#home" id="navbar_logo">EDGAdev</a>
+        <div class="navbar_toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar_menu">
+            <li class="navbar_item">
+                <a href="#home" class="navbar_links" id="home-page">Home</a>
+            </li>
+            <li class="navbar_item">
+                <a href="#about" class="navbar_links" id="about-page">About</a>
+            </li>
+            <li class="navbar_item">
+                <a href="#portfolio" class="navbar_links" id="portfolio-page">Portfolio</a>
+            </li>
+            <li class="navbar_item">
+                <a href="#contact" class="navbar_links" id="contact-page">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="hero" id="home">
+    <div class="hero_container">
+        <h1 class="hero_heading">Welcome, I'm <span>Edgaras</span></h1>
+        <p class="hero_description">And this is my Portfolio website</p>
+        <button class="main_btn"><a href="#about">Explore</a></button>
+    </div>
+</div>
+
+<div class="main" id="about">
+    <div class="main_container">
+        <div class="main_img-container">
+            <div class="main_img-card"><i class="far fa-user-circle"></i></div>
+        </div>
+        <div class="main_content">
+            <h1>A bit about me</h1>
+            <h2>Currently I am a Student at a college in my second year</h2>
+            <p>I have skills at JAVA including Spring, Spring Security Frameworks. Also some
+                HTML5, CSS, JavaScript knowledge. I know MySQL database, have expierence using
+                Git for project management.</p>
+            <button class="main_btn"><a href="#portfolio">Check my working Portfolio</a></button>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio" id="portfolio">
+    <h1>My Portfolio</h1>
+    <div class="portfolio_wrapper">
+        <div class="portfolio_card">
+            <h2>Internships</h2>
+            <p>text</p>
+        </div>
+        <div class="portfolio_card">
+            <h2>Full-Time Jobs</h2>
+            <p>text</p>
+        </div>
+        <div class="portfolio_card">
+            <h2>GitHub Repository</h2>
+            <p>text</p>
+        </div>
+    </div>
+</div>
+
+<div class="main" id="contact">
+    <div class="main_container">
+        <div class="main_content">
+            <h1>Contact me</h1>
+            <h2>By Sending Email</h2>
+            <p>I will try to reply as soon as possible</p>
+
+            <div class="contact_form">
+                <form>
+                    <div class="input_box">
+                        <label>
+                            <input type="text" name="" required="required" placeholder="Full Name">
+                        </label>
+                    </div>
+                    <div class="input_box">
+                        <label>
+                            <input type="text" name="" required="required" placeholder="Email">
+                        </label>
+                    </div>
+                    <div class="input_box">
+                        <label>
+                            <textarea required="required" placeholder="Message"></textarea>
+                        </label>
+                    </div>
+                    <button class="main_btn"><a href="#">Send</a></button>
+                </form>
+            </div>
+
+        </div>
+        <div class="main_img-container">
+            <div class="main_img-card"><i class="fas fa-envelope"></i></div>
+        </div>
+    </div>
+</div>
+
+<div class="footer_container">
+    <div class="social_media-wrapper">
+        <p class="website_rights">© EDGAdev 2021.</p>
+        <div class="social_icons">
+            <a href="https://www.instagram.com/" class="social_icon-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/edga_dev" class="social_icon-link"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
