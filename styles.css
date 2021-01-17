@@ -44,7 +44,6 @@ html{
     background-size: 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -185,23 +184,17 @@ html{
 }
 
 .hero_heading span{
-    background: #ED213A;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #A62E20, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #A62E20, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    transition: all 0.5s ease;
+}
+
+.hero_heading span.fade{
+    color: #cb2d3e;
 }
 
 .hero_description{
     font-size: 60px;
-    background: #ED213A;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #A62E20, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #A62E20, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-family: 'Mulish', sans-serif;
+    color: white;
 }
 
 .highlight{
@@ -249,9 +242,7 @@ html{
 
 .main_content h1{
     font-size: 5rem;
-    background-color: crimson;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: whitesmoke;
     text-transform: uppercase;
     margin-bottom: 32px;
     font-family: 'Staatliches', sans-serif;
@@ -324,28 +315,22 @@ html{
 
 .main_img-card{
     margin: 10px;
-    height: 500px;
-    width: 500px;
-    border-radius: 4px;
+    height: 450px;
+    width: 450px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background: #ED213A;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #232526;  /* fallback for old browsers */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.fa-user-circle,
-.fa-envelope{
+.fa-user-circle
+{
     font-size: 14rem;
 }
 
-#card-2{
-    background: #ff512f;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #dd2476, #ff512f);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #dd2476, #ff512f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
 
 /* Mobile Responsive */
 
@@ -396,7 +381,7 @@ html{
         height: 250px;
     }
 
-    .fa-users, .fa-layer-group{
+    .fa-user-circle{
         font-size: 4rem;
     }
 
@@ -452,14 +437,13 @@ html{
     margin: 15px;
     height: 425px;
     width: 350px;
-    border-radius: 4px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background: #ED213A;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #232526;  /* fallback for old browsers */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     transition: 0.3s ease-in;
 }
 
@@ -521,11 +505,93 @@ textarea{
     resize: vertical;
 }
 
+.contact-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info{
+    position: relative;
+    height: 550px;
+    width: 550px;
+    background: #232526;  /* fallback for old browsers */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    border-radius: 8px;
+}
+
+.contact-container .contact-info .box{
+    padding: 35px 0;
+    display: flex;
+    position: relative;
+    margin-left: 160px;
+    margin-top: 30px;
+}
+
+.contact-container .contact-info .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.fa-map-marker,
+.fa-phone,
+.fa-envelope{
+    color: white;
+}
+
+.contact-container .contact-info .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+    justify-content: center;
+    align-content: center;
+}
+
+.contact-container .contact-info .box .text h3{
+    color: crimson;
+}
+
+.contact-container .contact-info .box .text p{
+    color: white;
+}
+
+
+@media (max-width: 768px){
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .contact-info{
+        height: 60vh;
+        padding: 0 20px 20px 20px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+        margin-left: 40px;
+    }
+
+    .contact-container .contact-info .box{
+        margin: 30px 0 0 50px;
+    }
+
+    .contact-container .contact-info,
+    .contact-form{
+        width: 100%;
+    }
+}
 /* Footer section */
 
 .footer_container{
     background-color: #131313;
-    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
