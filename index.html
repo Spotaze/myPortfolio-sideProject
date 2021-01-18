@@ -39,7 +39,7 @@
     <div class="hero_container">
         <h1 class="hero_heading">Welcome, I'm Edgaras</h1>
         <p class="hero_description">And this is my Portfolio website</p>
-        <button class="main_btn"><a href="#about">Explore</a></button>
+        <a href="#about"><button class="main_btn">Explore</button></a>
     </div>
 </div>
 
@@ -54,7 +54,7 @@
             <p>I have knowledge about JAVA including Spring, Spring Security Frameworks. Also some
                 HTML5, CSS, JavaScript, PHP knowledge. I know MySQL database structure, have experience using
                 Git for project management.</p>
-            <button class="main_btn"><a href="#portfolio">Check my Portfolio</a></button>
+            <a href="#portfolio"><button class="main_btn">Check my Portfolio</button></a>
         </div>
     </div>
 </div>
@@ -85,29 +85,29 @@
             <p>I will try to reply as soon as possible</p>
 
             <div class="contact_form">
-                <form>
+                <form method="post" class="contact-form">
                     <div class="input_box">
                         <label>
-                            <input type="text" name="" required="required" placeholder="Full Name">
+                            <input class="name" type="text" placeholder="Name">
                         </label>
                     </div>
                     <div class="input_box">
                         <label>
-                            <input type="text" name="" required="required" placeholder="Email">
+                            <input class="email" type="email" placeholder="Email">
                         </label>
                     </div>
                     <div class="input_box">
                         <label>
-                            <textarea required="required" placeholder="Message"></textarea>
+                            <textarea class="message" placeholder="Message"></textarea>
                         </label>
                     </div>
-                    <button class="main_btn"><a href="#">Send</a></button>
+                    <button class="submit_btn" type="submit">Send</button>
                 </form>
             </div>
         </div>
 
         <div class="contact-container">
-            <div class="contact-info">
+            <div class="contact_img-card">
                 <div class="box">
                     <div class="icon"><i class="fa fa-map-marker"></i></div>
                     <div class="text">
@@ -144,6 +144,8 @@
     </div>
 </div>
 
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase.js"></script>
 <script src="app.js"></script>
 
 </body>

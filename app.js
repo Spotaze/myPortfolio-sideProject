@@ -82,3 +82,58 @@ const hideMobildeMenu = () => {
 
 menuLinks.addEventListener('click', hideMobildeMenu);
 navLogo.addEventListener('click', hideMobildeMenu);
+
+//Contact send email
+// Your web app's Firebase configuration
+var firebaseConfig = {
+    apiKey: "apiKey",
+    authDomain: "authDomain",
+    projectId: "projectId",
+    storageBucket: "storageBucket",
+    messagingSenderId: "messagingSenderId",
+    appId: "appId"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+//contactInfo collections
+let contactInfo = firebase.database().ref("infos");
+
+document.querySelector('.contact_form').addEventListener('submit', submitForm);
+
+function submitForm(e) {
+    e.preventDefault();
+
+    //Get Input Values
+    let name = document.querySelector('.name').value;
+    let email = document.querySelector('.email').value;
+    let message = document.querySelector('.message').value;
+
+    saveContactInfo(name, email, message);
+
+    document.querySelector('.contact-form').reset();
+
+    sendEmail(name, email, message);
+}
+
+function saveContactInfo(name, email, message) {
+    let newContactInfo = contactInfo.push();
+
+    newContactInfo.set({
+        name: name,
+        email: email,
+        message: message,
+    });
+}
+
+function sendEmail(name, email, message){
+    Email.send({
+        Host: 'smtp.gmail.com',
+        Username: 'test@gmail.com',
+        Password: 'test',
+        To: 'test@gmail.com',
+        From: 'test@gmail.com',
+        Subject: `${name} sent you a message`,
+        Body: `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}`
+    }).then((message) => alert("mail sent successfully"));
+}

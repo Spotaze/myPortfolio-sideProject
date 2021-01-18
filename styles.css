@@ -267,53 +267,36 @@ html{
     font-family: 'Mulish', sans-serif;
 }
 
-.main_btn{
-    font-size: 1.8rem;
-    background: #cb2d3e;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.main_btn,
+.submit_btn{
+    font-size: 1.5rem;
+    background: transparent;
     padding: 20px 60px;
-    border: none;
+    border: 1px solid crimson;
     border-radius: 4px;
     margin-top: 2rem;
     cursor: pointer;
     position: relative;
     transition: all 0.35s;
     outline: none;
-}
-
-.main_btn a{
-    position: relative;
     z-index: 2;
     color: #fff;
-    text-decoration: none;
-}
-
-.main_btn:after{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: crimson;
-    transition: all 0.35s;
-    border-radius: 4px;
 }
 
 .main_btn:hover{
-    color: #fff;
+    background: crimson;
 }
 
-.main_btn:hover:after{
-    width: 100%;
+a{
+    text-decoration: none;
 }
 
 .main_img-container{
     text-align: center;
 }
 
-.main_img-card{
+.main_img-card,
+.contact_img-card{
     margin: 10px;
     height: 450px;
     width: 450px;
@@ -345,14 +328,20 @@ html{
         height: 90%;
     }
 
-    .main_img-container{
+    .main_img-container,
+    .contact-container{
         display: flex;
         justify-content: center;
     }
 
-    .main_img-card{
+    .main_img-card,
+    .contact_img-card{
         height: 425px;
         width: 425px;
+    }
+
+    .icon{
+        margin-right: 50px;
     }
 
     .main_content{
@@ -379,6 +368,15 @@ html{
     .main_img-card{
         width: 250px;
         height: 250px;
+    }
+
+    .contact_img-card{
+        width: 250px;
+        height: 400px;
+    }
+
+    .icon{
+        margin-left: 150px;
     }
 
     .fa-user-circle{
@@ -506,39 +504,36 @@ textarea{
 }
 
 .contact-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
 }
 
-.contact-info{
-    position: relative;
-    height: 550px;
-    width: 550px;
+.contact_img-card{
+    height: 500px;
+    width: 450px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
     background: #232526;  /* fallback for old browsers */
     background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: white;
-    border-radius: 8px;
 }
 
-.contact-container .contact-info .box{
-    padding: 35px 0;
-    display: flex;
-    position: relative;
-    margin-left: 160px;
-    margin-top: 30px;
-}
-
-.contact-container .contact-info .box .icon{
-    min-width: 60px;
-    height: 60px;
+.icon{
     background: crimson;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    font-size: 22px;
+    margin-left: 200px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.text h3{
+    color: crimson;
 }
 
 .fa-map-marker,
@@ -547,45 +542,13 @@ textarea{
     color: white;
 }
 
-.contact-container .contact-info .box .text{
-    display: flex;
-    margin-left: 20px;
-    font-size: 16px;
-    flex-direction: column;
-    font-weight: 300;
-    justify-content: center;
-    align-content: center;
+.submit_btn:hover{
+    background: crimson;
 }
-
-.contact-container .contact-info .box .text h3{
-    color: crimson;
-}
-
-.contact-container .contact-info .box .text p{
-    color: white;
-}
-
 
 @media (max-width: 768px){
     .contact-container{
         flex-direction: column;
-    }
-
-    .contact-info{
-        height: 60vh;
-        padding: 0 20px 20px 20px;
-        margin-right: 20px;
-        margin-bottom: 40px;
-        margin-left: 40px;
-    }
-
-    .contact-container .contact-info .box{
-        margin: 30px 0 0 50px;
-    }
-
-    .contact-container .contact-info,
-    .contact-form{
-        width: 100%;
     }
 }
 /* Footer section */
