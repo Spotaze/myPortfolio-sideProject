@@ -1,152 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-          integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-          crossorigin="anonymous">
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
+
 <body>
-<nav class="navbar">
-    <div class="navbar_container">
-        <a href="#home" id="navbar_logo">EDGAdev</a>
-        <div class="navbar_toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="#home" id="navbar_logo">EDGAdev</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="#home" class="navbar_links" id="home-page">Home</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#about" class="navbar_links" id="about-page">About</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#portfolio" class="navbar_links" id="portfolio-page">Portfolio</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#contact" class="navbar_links" id="contact-page">Contact</a>
+                </li>
+            </ul>
         </div>
-        <ul class="navbar_menu">
-            <li class="navbar_item">
-                <a href="#home" class="navbar_links" id="home-page">Home</a>
-            </li>
-            <li class="navbar_item">
-                <a href="#about" class="navbar_links" id="about-page">About</a>
-            </li>
-            <li class="navbar_item">
-                <a href="#portfolio" class="navbar_links" id="portfolio-page">Portfolio</a>
-            </li>
-            <li class="navbar_item">
-                <a href="#contact" class="navbar_links" id="contact-page">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+    </nav>
 
-<div class="hero" id="home">
-    <div class="hero_container">
-        <h1 class="hero_heading">Welcome, I'm Edgaras</h1>
-        <p class="hero_description">And this is my Portfolio website</p>
-        <a href="#about"><button class="main_btn">Explore</button></a>
-    </div>
-</div>
-
-<div class="main" id="about">
-    <div class="main_container">
-        <div class="main_img-container">
-            <div class="main_img-card"><i class="far fa-user-circle"></i></div>
-        </div>
-        <div class="main_content">
-            <h1>A bit about me</h1>
-            <h2>Currently I am a Student at a college in my second year</h2>
-            <p>I have knowledge about JAVA including Spring, Spring Security Frameworks. Also some
-                HTML5, CSS, JavaScript, PHP knowledge. I know MySQL database structure, have experience using
-                Git for project management.</p>
-            <a href="#portfolio"><button class="main_btn">Check my Portfolio</button></a>
+    <div class="hero" id="home">
+        <div class="hero_container">
+            <h1 class="hero_heading">Welcome, I'm Edgaras</h1>
+            <p class="hero_description">And this is my Portfolio website</p>
+            <a href="#about"><button class="main_btn">Explore</button></a>
         </div>
     </div>
-</div>
 
-<div class="portfolio" id="portfolio">
-    <h1>My Portfolio</h1>
-    <div class="portfolio_wrapper">
-        <div class="portfolio_card">
-            <h2>Internships</h2>
-            <p>text</p>
-        </div>
-        <div class="portfolio_card">
-            <h2>Full-Time Jobs</h2>
-            <p>text</p>
-        </div>
-        <div class="portfolio_card">
-            <h2>GitHub Repository</h2>
-            <p>text</p>
-        </div>
-    </div>
-</div>
-
-<div class="main" id="contact">
-    <div class="main_container">
-        <div class="main_content">
-            <h1>Contact me</h1>
-            <h2>By Sending Email</h2>
-            <p>I will try to reply as soon as possible</p>
-
-            <div class="contact_form">
-                <form method="post" class="contact-form">
-                    <div class="input_box">
-                        <label>
-                            <input class="name" type="text" placeholder="Name">
-                        </label>
-                    </div>
-                    <div class="input_box">
-                        <label>
-                            <input class="email" type="email" placeholder="Email">
-                        </label>
-                    </div>
-                    <div class="input_box">
-                        <label>
-                            <textarea class="message" placeholder="Message"></textarea>
-                        </label>
-                    </div>
-                    <button class="submit_btn" type="submit">Send</button>
-                </form>
+    <div class="main" id="about">
+        <div class="main_container">
+            <div class="main_img-container">
+                <div class="main_img-card"><i class="far fa-user-circle"></i></div>
+            </div>
+            <div class="main_content">
+                <h1>A bit about me</h1>
+                <h2>Currently I am a Student at a college in my second year</h2>
+                <p>I have knowledge about JAVA including Spring, Spring Security Frameworks. Also some
+                    HTML5, CSS, JavaScript, PHP knowledge. I know MySQL database structure, have experience using
+                    Git for project management.</p>
+                <a href="#portfolio"><button class="main_btn">Check my Portfolio</button></a>
             </div>
         </div>
+    </div>
 
-        <div class="contact-container">
-            <div class="contact_img-card">
-                <div class="box">
-                    <div class="icon"><i class="fa fa-map-marker"></i></div>
-                    <div class="text">
-                        <h3>Address</h3>
-                        <p>Macernio g,<br>Lithuania, Plunge,<br>90140</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="icon"><i class="fa fa-phone"></i></div>
-                    <div class="text">
-                        <h3>Phone</h3>
-                        <p>86*******</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="icon"><i class="far fa-envelope"></i></div>
-                    <div class="text">
-                        <h3>Email</h3>
-                        <p>edgas258@gmail.com</p>
-                    </div>
+    <div class="portfolio" id="portfolio">
+        <h1>My Portfolio</h1>
+        <div class="portfolio_wrapper">
+            <div class="portfolio_card">
+                <h2>Internships</h2>
+                <p>Emotion.lt (Spring framework)</p>
+            </div>
+            <div class="portfolio_card">
+                <h2>Full-Time Jobs</h2>
+                <p>None</p>
+            </div>
+            <div class="portfolio_card">
+                <h2>GitHub Repository</h2>
+                <a href="https://github.com/Spotaze" style="color: #fff;"><p>Click here!</p></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="contact_container">
+            <div class="contact_content">
+                <h1>Contact me</h1>
+                <h2>By Sending Email</h2>
+                <p>I will try to reply as soon as possible</p>
+
+                <div class="contact_form">
+                    <form method="post" class="contact-form">
+                        <div class="input_box">
+                            <label>
+                                <input class="name" type="text" placeholder="Name">
+                            </label>
+                        </div>
+                        <div class="input_box">
+                            <label>
+                                <input class="email" type="email" placeholder="Email">
+                            </label>
+                        </div>
+                        <div class="input_box">
+                            <label>
+                                <textarea class="message" placeholder="Message"></textarea>
+                            </label>
+                        </div>
+                        <button class="submit_btn" type="submit">Send</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="footer_container">
-    <div class="social_media-wrapper">
-        <p class="website_rights">© EDGAdev 2021.</p>
-        <div class="social_icons">
-            <a href="https://www.instagram.com/" class="social_icon-link"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com/edga_dev" class="social_icon-link"><i class="fab fa-twitter"></i></a>
+
+    <div class="footer_container">
+        <div class="social_media-wrapper">
+            <p class="website_rights">© EDGAdev 2021.</p>
+            <div class="social_icons">
+                <a href="https://www.instagram.com/" class="social_icon-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/edga_dev" class="social_icon-link"><i class="fab fa-twitter"></i></a>
+            </div>
         </div>
     </div>
-</div>
 
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase.js"></script>
-<script src="app.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase.js"></script>
+    <script src="app.js"></script>
 
 </body>
+
 </html>

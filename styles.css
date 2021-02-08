@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
 
 *{
     box-sizing: border-box;
@@ -160,9 +161,8 @@ html{
 
 /* Hero Section */
 .hero{
-    background: #000;
-    background: linear-gradient(to right, #161616, #000000);
-    padding: 260px 0;
+    background: url(https://www.capcitycreative.ca/wp-content/uploads/2018/08/design.jpg);
+    padding: 200px 0;
 }
 
 .hero_container{
@@ -178,7 +178,7 @@ html{
 }
 
 .hero_heading{
-    font-size: 100px;
+    font-size: 80px;
     margin-bottom: 24px;
     color: #fff;
 }
@@ -193,7 +193,7 @@ html{
 
 .hero_description{
     font-size: 60px;
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     color: white;
 }
 
@@ -217,8 +217,8 @@ html{
 
 /* About Section */
 
-.main{
-    background-color: #131313;
+.main, .contact{
+    background: #161616;
     padding: 10rem 0;
 }
 
@@ -235,12 +235,12 @@ html{
     padding: 0 50px;
 }
 
-.main_content{
+.main_content, .contact_content{
     color: #fff;
     width: 100%;
 }
 
-.main_content h1{
+.main_content h1, .contact_content h1{
     font-size: 5rem;
     color: whitesmoke;
     text-transform: uppercase;
@@ -249,7 +249,7 @@ html{
     letter-spacing: 8px;
 }
 
-.main_content h2{
+.main_content h2, .contact_content h2{
     font-size: 2rem;
     background: #ED213A;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #A62E20, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
@@ -260,15 +260,14 @@ html{
     font-family: 'Open Sans', sans-serif;
 }
 
-.main_content p{
+.main_content p, .contact_content p{
     margin-top: 1rem;
     font-size: 1.1rem;
     line-height: 1.8;
     font-family: 'Mulish', sans-serif;
 }
 
-.main_btn,
-.submit_btn{
+.main_btn{
     font-size: 1.5rem;
     background: transparent;
     padding: 20px 60px;
@@ -295,8 +294,7 @@ a{
     text-align: center;
 }
 
-.main_img-card,
-.contact_img-card{
+.main_img-card{
     margin: 10px;
     height: 450px;
     width: 450px;
@@ -318,7 +316,7 @@ a{
 /* Mobile Responsive */
 
 @media screen and (max-width: 1100px){
-    .main_container{
+    .main_container, .contact-container{
         display: grid;
         grid-template-columns: 1fr;
         align-items: center;
@@ -334,8 +332,7 @@ a{
         justify-content: center;
     }
 
-    .main_img-card,
-    .contact_img-card{
+    .main_img-card{
         height: 425px;
         width: 425px;
     }
@@ -344,21 +341,21 @@ a{
         margin-right: 50px;
     }
 
-    .main_content{
+    .main_content, .contact_content{
         text-align: center;
         margin-bottom: 4rem;
     }
 
-    .main_content h1{
-        font-size: 3rem;
+    .main_content h1, .contact_content h1, .portfolio h1{
+        font-size: 3.5rem;
         margin-top: 2rem;
     }
 
-    .main_content h2{
+    .main_content h2, .contact_content h2{
         font-size: 2.5rem;
     }
 
-    .main_content p{
+    .main_content p, .contact_content p{
         margin-top: 1rem;
         font-size: 1.5rem;
     }
@@ -370,11 +367,6 @@ a{
         height: 250px;
     }
 
-    .contact_img-card{
-        width: 250px;
-        height: 400px;
-    }
-
     .icon{
         margin-left: 150px;
     }
@@ -383,16 +375,16 @@ a{
         font-size: 4rem;
     }
 
-    .main_content h1{
-        font-size: 2rem;
+    .main_content h1, .contact_content h1, .portfolio h1{
+        font-size: 2.5rem;
         margin-top: 3rem;
     }
 
-    .main_content h2{
+    .main_content h2, .contact_content h2{
         font-size: 2rem;
     }
 
-    .main_content p{
+    .main_content p, .contact_content p{
         margin-top: 2rem;
     }
 
@@ -405,7 +397,7 @@ a{
 /*Portfolio Section */
 
 .portfolio{
-    background: #131313;
+    background: #222222;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -415,14 +407,10 @@ a{
 }
 
 .portfolio h1{
-    background: #ED213A;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: whitesmoke;
     margin-bottom: 5rem;
     font-size: 3rem;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Staatliches', sans-serif;
 }
 
 .portfolio_wrapper{
@@ -440,8 +428,8 @@ a{
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background: #232526;  /* fallback for old browsers */
-    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #232526; 
+    background: linear-gradient(to right, #414345, #232526);
     transition: 0.3s ease-in;
 }
 
@@ -473,6 +461,19 @@ a{
 }
 
 /* Contact Form */
+
+.contact_container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90%;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
 .contact_form{
     margin: 20px 0;
 }
@@ -480,22 +481,22 @@ a{
 .contact_form input,
 .contact_form textarea{
     position: relative;
-    background: #131313;
+    background: #1f1f1f;
     margin: 5px auto;
     border: none;
-    border-bottom: 2px solid #303030;
+    border-bottom: 1px solid rgb(175, 68, 89);
     color: #fff;
     outline: none;
 }
 
 .contact_form input{
     padding: 10px;
-    width: 70%;
+    width: 100%;
 }
 
 .contact_form textarea{
     padding: 10px;
-    width:70%;
+    width:100%;
     height:100px;
 }
 
@@ -503,58 +504,34 @@ textarea{
     resize: vertical;
 }
 
-.contact-container{
-  text-align: center;
-}
-
-.contact_img-card{
-    height: 500px;
-    width: 450px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #fff;
-    background: #232526;  /* fallback for old browsers */
-    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.icon{
-    background: crimson;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 200px;
-    margin-top: 20px;
-    margin-bottom: 5px;
-}
 
 .text h3{
     color: crimson;
 }
 
-.fa-map-marker,
-.fa-phone,
-.fa-envelope{
-    color: white;
+.submit_btn{
+    font-size: 1rem;
+    background: transparent;
+    padding: 15px 50px;
+    border: 1px solid crimson;
+    border-radius: 4px;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    z-index: 2;
+    color: #fff;
 }
 
 .submit_btn:hover{
     background: crimson;
 }
 
-@media (max-width: 768px){
-    .contact-container{
-        flex-direction: column;
-    }
-}
 /* Footer section */
 
 .footer_container{
-    background-color: #131313;
+    background-color:#262626;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -563,7 +540,7 @@ textarea{
 
 .social_icon-link{
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .social_icon-link:hover{
@@ -586,8 +563,6 @@ textarea{
     align-items: center;
     width: 240px;
 }
-
-
 
 .website_rights{
     color: #fff;
