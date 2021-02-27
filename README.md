@@ -1,10 +1,7 @@
-<p><h2>Hello.</h2></p> 
-This is my side project <i>about me/my portfolio</i> I am gonna build up and I will try to keep updating it, implementing new features!<br>
-Here you can find website with responsive layout made using html and css.<br>
-Also some JavaScript coding to make it look nicer and with some functionality.<br>
+## MyPorfolio
 
-<strong> This is just for fun ! :) </strong>
+This is my portfolio website I made for fun using HTML5, CSS and some JavaScript. I will try to keep updating it and implementing something new :)
 
-<p><i>Super easy to launch just clone it!</i></p>
+Easy to launch just clone it ! :)
 
-
+This project isn't for publishing live.
